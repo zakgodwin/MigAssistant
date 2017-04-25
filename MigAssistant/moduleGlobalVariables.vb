@@ -50,7 +50,8 @@ Module moduleGlobalVariables
     Public str_PrimaryDataDrive As String = Nothing
 
     ' Get Application Information
-    Public str_USMTFolder As String = My.Computer.FileSystem.SpecialDirectories.ProgramFiles & "\USMT301"
+    'Public str_USMTFolder As String = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86) & "\Windows Kits\10\Assessment and Deployment Kit\User State Migration Tool"
+    Public str_USMTFolder As String = My.Settings.DefaultRuleSetPath
     Public str_WMAFolder As String = My.Application.Info.DirectoryPath
     Public str_TempFolder As String = System.IO.Path.GetTempPath.TrimEnd("\")
     Public str_LogFile As String = My.Computer.FileSystem.SpecialDirectories.Temp & "\WMA.Log"

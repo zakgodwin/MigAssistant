@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="MigrationNetworkLocation" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">\\ServerName\MigrationShare</Value>
+      <Value Profile="(Default)">\\zaklaptop-02\ToyotaImage</Value>
     </Setting>
     <Setting Name="MigrationExclusionsDomain" Type="System.String" Scope="Application">
       <Value Profile="(Default)">*_Admin</Value>
@@ -87,7 +87,7 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="MigrationExclusionsOlderThanDays" Type="System.Int32" Scope="Application">
-      <Value Profile="(Default)">0</Value>
+      <Value Profile="(Default)">60</Value>
     </Setting>
     <Setting Name="MigrationDomainChange" Type="System.String" Scope="Application">
       <Value Profile="(Default)" />
@@ -96,7 +96,10 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="MigrationMultiUserMode" Type="System.Boolean" Scope="Application">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DefaultRuleSetPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\User State Migration Tool\amd64</Value>
     </Setting>
   </Settings>
 </SettingsFile>
